@@ -56,4 +56,11 @@ app.get("/quote", (req, res) => {
   });
 });
 
+app.get("/route1", (req, res) => {
+  res.json({
+    message: "This is route 1 message",
+    author: "Tushar Tayal"
+  });
+});
+
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
